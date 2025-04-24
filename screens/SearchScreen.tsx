@@ -86,7 +86,7 @@ const SearchScreen = () => {
         <SafeAreaView style={styles.container}>
             <TopHeader title="Search" onSupportPress={() => navigation.navigate("Support")} />
             <ScrollView style={styles.scrollContainer} showsVerticalScrollIndicator={false}>
-                {/* Search Input */}
+
                 <View style={styles.searchWrapper}>
                     <Text style={styles.searchLabel}>Search any keyword...</Text>
                     <View style={styles.searchInputContainer}>
@@ -135,7 +135,6 @@ const SearchScreen = () => {
                 </ScrollView>
             </ScrollView>
 
-            {/* Image Modal */}
             <Modal visible={modalVisible} transparent animationType="fade">
                 <View style={styles.modalOverlay}>
                     <Pressable style={styles.modalContainer} onPress={() => setModalVisible(false)}>

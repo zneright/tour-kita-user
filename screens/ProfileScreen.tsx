@@ -41,7 +41,7 @@ export default function ProfileScreen() {
                 {[
                     { title: 'View Profile', onPress: () => navigation.navigate('ViewProfile') },
                     { title: 'Change Password', onPress: () => navigation.navigate('ChangePassword') },
-                    { title: 'Terms of Services', onPress: () => navigation.navigate('Terms') },
+                    { title: 'Terms', onPress: () => navigation.navigate('Terms') },
                 ].map((item, idx) => (
                     <TouchableOpacity key={idx} style={styles.menuItem} onPress={item.onPress}>
                         <Text style={styles.menuText}>{item.title}</Text>

@@ -52,6 +52,15 @@ const categories = [
         label: "Churches",
         uri: "https://img.icons8.com/ios-filled/100/9c8061/church.png",
     },
+    {
+        label: "Restrooms",
+        uri: "https://img.icons8.com/ios-filled/100/9c8061/toilet.png",
+    },
+
+    {
+        label: "Shops",
+        uri: "https://img.icons8.com/ios-filled/100/9c8061/shop.png",
+    },
 ];
 
 export default function MapsScreen() {
@@ -112,7 +121,6 @@ export default function MapsScreen() {
                 </TouchableOpacity>
             </View>
 
-            {/* Map */}
             <ScrollView contentContainerStyle={styles.mapScroll}>
                 <PinchGestureHandler onGestureEvent={pinchHandler}>
                     <Animated.View style={[styles.mapWrapper, animatedStyle]}>

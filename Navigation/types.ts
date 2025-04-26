@@ -14,4 +14,5 @@ export type RootStackParamList = {
     ViewProfile: undefined;
     EditProfile: undefined;
     ChangePassword: undefined;
+    Feedback: undefined;
 };

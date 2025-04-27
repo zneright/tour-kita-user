@@ -4,7 +4,7 @@
     "slug": "tourkita",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/TourkitaLogo.jpg",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -19,16 +19,10 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.ryanchico.tourkita"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "28ca4c5e-5e48-4d61-b880-79005ad5fdb3"
-      }
     }
   }
 }

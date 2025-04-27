@@ -141,15 +141,6 @@ const styles = StyleSheet.create({
         fontSize: 15.5,
         lineHeight: 24,
         color: '#555',
-<<<<<<< HEAD
-    },
-    footer: {
-        fontSize: 13,
-        color: 'gray',
-        textAlign: 'center',
-        marginTop: 30,
-=======
->>>>>>> origin/main
     },
     footer: {
         fontSize: 13,

@@ -13,7 +13,11 @@ import TopHeader from "../components/TopHeader";
 
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+<<<<<<< HEAD
 import type { RootStackParamList } from "../Navigation/types";
+=======
+import type { RootStackParamList } from "../services/types";
+>>>>>>> origin/main
 import BottomFooter from "../components/BottomFooter";
 
 

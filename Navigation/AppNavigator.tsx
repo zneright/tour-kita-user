@@ -13,17 +13,24 @@ import SearchScreen from '../screens/SearchScreen';
 import ArCamScreen from '../screens/ArCamScreen';
 import NotificationScreen from '../screens/NotificationScreen';
 import ProfileScreen from '../screens/ProfileScreen';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import LandmarkProvider from '../provider/LandmarkProvider';
-import SelectedLandmarkSheet from '../components/selectedLandmarkSheet';
+import ViewProfileScreen from '../screens/ViewProfileScreen';
+import EditProfileScreen from '../screens/EditProfileScreen';
+import ChangePasswordScreen from '../screens/ChangePasswordScreen';
+import FeedbackScreen from '../screens/FeedbackScreen';
+
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppNavigator = () => {
     return (
-        <GestureHandlerRootView>
-            <LandmarkProvider>
-        <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Login">
+        <Stack.Navigator
+            screenOptions={{
+                headerShown: false,
+                animation: 'fade',
+                gestureEnabled: true,
+            }}
+            initialRouteName="Login"
+        >
             <Stack.Screen name="Login" component={LoginScreen} />
             <Stack.Screen name="SignUp" component={SignUpScreen} />
             <Stack.Screen name="Terms" component={TermsScreen} />
@@ -35,11 +42,13 @@ const AppNavigator = () => {
             <Stack.Screen name="ArCam" component={ArCamScreen} />
             <Stack.Screen name="Notification" component={NotificationScreen} />
             <Stack.Screen name="Profile" component={ProfileScreen} />
+            <Stack.Screen name="ViewProfile" component={ViewProfileScreen} />
+            <Stack.Screen name="EditProfile" component={EditProfileScreen} />
+            <Stack.Screen name="ChangePassword" component={ChangePasswordScreen} />
+            <Stack.Screen name="Feedback" component={FeedbackScreen} />
         </Stack.Navigator>
-        <SelectedLandmarkSheet/>
-            </LandmarkProvider>
-        </GestureHandlerRootView>
     );
 };
+
 
 export default AppNavigator;

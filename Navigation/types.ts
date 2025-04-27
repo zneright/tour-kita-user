@@ -11,4 +11,8 @@ export type RootStackParamList = {
     ArCam: undefined;
     Notification: undefined;
     Profile: undefined;
+    ViewProfile: undefined;
+    EditProfile: undefined;
+    ChangePassword: undefined;
+    Feedback: undefined;
 };
